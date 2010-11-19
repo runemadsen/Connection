@@ -44,6 +44,8 @@ void testApp::draw()
 
 void testApp::keyPressed  (int key)
 {
+	scenes[curScene]->keyPressed(key);
+	
 	if (key == 'f'){
 		ofToggleFullscreen();
 	}

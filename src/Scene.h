@@ -10,6 +10,7 @@ public:
 	Scene() {}
 	virtual void update() {}
 	virtual void display() {}
+	virtual void keyPressed(int key) {}
 	
 	bool finished() { return _finished; }
 	

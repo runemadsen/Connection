@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "Scene.h"
+#include "Tools.h"
 
 class Scene1 : public Scene {
 	
@@ -10,10 +11,19 @@ class Scene1 : public Scene {
 	Scene1();
 	void update();
 	void display();
+	void keyPressed(int key);
 
 	private:
 	
 	ofImage _img;
 	ofTrueTypeFont _font;
-	ofImage _test;
+	
+	Timer _nameCounter;
+	Timer _titleFade;
+	Timer _nameFade;
+	
+	string _userName;
+	
+	bool _fadeMode;
+	
 };
