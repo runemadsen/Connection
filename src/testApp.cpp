@@ -9,9 +9,10 @@ void testApp::setup()
 
 	ofSetFrameRate(60);
 	
-	curScene = 0;
+	curScene = 1;
 	
 	scenes.push_back( new Scene1() );
+	scenes.push_back( new Scene2() );
 }
 
 /* Update
@@ -35,6 +36,8 @@ void testApp::update()
 
 void testApp::draw()
 {
+	ofSetColor(255, 255, 255, 255);
+	
 	scenes[curScene]->display();
 }
 

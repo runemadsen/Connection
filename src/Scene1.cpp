@@ -23,8 +23,6 @@ void Scene1::update()
 {
 	_nameCounter.tick();
 	
-	//cout << "time: " << _nameCounter.time << " duration: " << _nameCounter.duration << endl;
-	
 	if(_userName.size() > 0 && _nameCounter.time == _nameCounter.duration && !_fadeMode)
 	{
 		_fadeMode = true;
@@ -32,8 +30,17 @@ void Scene1::update()
 	
 	if(_fadeMode)
 	{
-		_nameFade.tick();
 		_titleFade.tick();
+		
+		if(_titleFade.time > 50)
+		{
+			_nameFade.tick();
+		}
+		
+		if(_nameFade.time == _nameFade.duration)
+		{
+			_finished = true;	
+		}
 	}
 }
 
@@ -44,8 +51,6 @@ void Scene1::display()
 	// Draw title
 	float a = Quad::easeOut(_titleFade.time, 255, -255, _titleFade.duration);
 	
-	cout << _titleFade.time << ":" << _titleFade.duration << ":" << a << endl;
-	
 	ofSetColor(255, 255, 255, a);
 	_img.draw(206, 324);
 	
@@ -54,9 +59,6 @@ void Scene1::display()
 	if(ofGetFrameNum() % 100 > 50)
 	{
 		a = 0;
-	}
-	else {
-		a = 255;
 	}
 	
 	ofFill();

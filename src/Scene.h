@@ -7,7 +7,7 @@ class Scene
 	
 public:
 	
-	Scene() {}
+	Scene() { _finished = false; }
 	virtual void update() {}
 	virtual void display() {}
 	virtual void keyPressed(int key) {}
@@ -17,6 +17,7 @@ public:
 protected:
 	
 	bool _finished;
+	ofImage _test;
 	
 private:
 	

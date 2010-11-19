@@ -5,6 +5,7 @@
 #include "ofMain.h"
 #include "Scene.h"
 #include "Scene1.h"
+#include "Scene2.h"
 
 class testApp : public ofBaseApp{
 	
