@@ -1,13 +1,14 @@
 #pragma once
 
 #include "ofMain.h"
+#include "Tween.h"
 
 class Scene
 {
 	
 public:
 	
-	Scene() { _finished = false; }
+	Scene() { _finished = false; _fadeMode = false; }
 	virtual void update() {}
 	virtual void display() {}
 	virtual void keyPressed(int key) {}
@@ -18,6 +19,8 @@ protected:
 	
 	bool _finished;
 	ofImage _test;
+	
+	bool _fadeMode;
 	
 private:
 	

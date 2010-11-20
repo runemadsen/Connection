@@ -20,6 +20,7 @@ private:
 	ofTrueTypeFont _font;
 	
 	Timer _countDown;
-	Timer _titleFade;
-	Timer _handFade;
+	
+	Tween _titleFade;
+	Tween _handFade;
 };

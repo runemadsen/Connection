@@ -9,7 +9,7 @@ void testApp::setup()
 
 	ofSetFrameRate(60);
 	
-	curScene = 1;
+	curScene = 0;
 	
 	scenes.push_back( new Scene1() );
 	scenes.push_back( new Scene2() );

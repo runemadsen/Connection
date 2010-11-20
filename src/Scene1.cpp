@@ -1,7 +1,4 @@
 #include "Scene1.h"
-#include "Sine.h"
-#include "Quad.h"
-
 
 Scene1::Scene1()
 {
@@ -11,33 +8,34 @@ Scene1::Scene1()
 	_font.loadFont("GothamRounded-Book.ttf", 26, true, true);
 	
 	_nameCounter.duration = 200;
-	_titleFade.duration = 100;
-	_nameFade.duration = 100;
+	
+	
+	_titleFade.setup(100, 255, -255, "Quad.easeOut");
+	_nameFade.setup(100, 255, -255, "Quad.easeOut", 50);
+	
 	
 	_userName = "";
-	
-	_fadeMode = false;
 }
 
 void Scene1::update()
 {
 	_nameCounter.tick();
 	
+	
 	if(_userName.size() > 0 && _nameCounter.time == _nameCounter.duration && !_fadeMode)
 	{
 		_fadeMode = true;
+		
+		_titleFade.play();
+		_nameFade.play();
 	}
 	
 	if(_fadeMode)
 	{
-		_titleFade.tick();
+		_titleFade.update();
+		_nameFade.update();
 		
-		if(_titleFade.time > 50)
-		{
-			_nameFade.tick();
-		}
-		
-		if(_nameFade.time == _nameFade.duration)
+		if(_nameFade.finished())
 		{
 			_finished = true;	
 		}
@@ -49,13 +47,14 @@ void Scene1::display()
 	ofEnableAlphaBlending();
 	
 	// Draw title
-	float a = Quad::easeOut(_titleFade.time, 255, -255, _titleFade.duration);
+	//float a = Quad::easeOut(_titleFade.time, 255, -255, _titleFade.duration);
+	
+	float a =  _titleFade.num;
 	
 	ofSetColor(255, 255, 255, a);
 	_img.draw(206, 324);
 	
 	// Draw Blinker
-	
 	if(ofGetFrameNum() % 100 > 50)
 	{
 		a = 0;
@@ -68,8 +67,7 @@ void Scene1::display()
 	
 	//Draw name
 	
-	a = Quad::easeOut(_nameFade.time, 255, -255, _nameFade.duration);
-	ofSetColor(255, 255, 255, a);
+	ofSetColor(255, 255, 255, _nameFade.num);
 	
 	_font.drawString(_userName, 793 - _font.stringWidth(_userName), 445);
 	

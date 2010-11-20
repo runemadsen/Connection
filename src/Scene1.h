@@ -18,12 +18,10 @@ class Scene1 : public Scene {
 	ofImage _img;
 	ofTrueTypeFont _font;
 	
+	Tween _titleFade;
+	Tween _nameFade;
+	
 	Timer _nameCounter;
-	Timer _titleFade;
-	Timer _nameFade;
 	
-	string _userName;
-	
-	bool _fadeMode;
-	
+	string _userName;	
 };

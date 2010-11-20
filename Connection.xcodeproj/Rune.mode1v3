@@ -229,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -268,14 +266,16 @@
 								<string>E4B69B4A0A3A1720003C02F2</string>
 								<string>A540C20412970B7D003F60CC</string>
 								<string>E4B69E1C0A3A1BDC003C02F2</string>
+								<string>A540C575129760BC003F60CC</string>
 								<string>A56221B21295FFA4003B9B20</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>14</integer>
-									<integer>5</integer>
+									<integer>15</integer>
+									<integer>9</integer>
+									<integer>4</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -310,12 +310,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>testApp.cpp</string>
+								<string>Scene2.cpp</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -323,24 +325,26 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>testApp.cpp</string>
+										<string>Scene2.cpp</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>A540C4CB129734DA003F60CC</string>
+										<string>A540C63212976F50003F60CC</string>
 										<key>history</key>
 										<array>
 											<string>A5DE059F1296047C00283585</string>
 											<string>A540C28712970FAF003F60CC</string>
-											<string>A540C3E112972B68003F60CC</string>
 											<string>A540C3E212972B68003F60CC</string>
-											<string>A540C3FD12972BBE003F60CC</string>
-											<string>A540C43E12972EBF003F60CC</string>
-											<string>A540C43F12972EBF003F60CC</string>
-											<string>A540C4B712973469003F60CC</string>
-											<string>A540C4B812973469003F60CC</string>
-											<string>A540C4C9129734DA003F60CC</string>
-											<string>A540C4CA129734DA003F60CC</string>
+											<string>A540C4D812973991003F60CC</string>
+											<string>A540C51D12975C90003F60CC</string>
+											<string>A540C5DD129768B4003F60CC</string>
+											<string>A540C5F812976A12003F60CC</string>
+											<string>A540C62A12976F3B003F60CC</string>
+											<string>A540C62B12976F3B003F60CC</string>
+											<string>A540C62C12976F3B003F60CC</string>
+											<string>A540C62D12976F3B003F60CC</string>
+											<string>A540C62E12976F3B003F60CC</string>
+											<string>A540C62F12976F3B003F60CC</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -568,7 +572,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Tools.h</string>
+								<string>Tween.cpp</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
