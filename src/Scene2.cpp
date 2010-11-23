@@ -1,6 +1,4 @@
 #include "Scene2.h"
-#include "Quad.h"
-
 
 Scene2::Scene2()
 {
@@ -15,8 +13,8 @@ Scene2::Scene2()
 	
 	_countDown.duration = 500;
 	
-	_titleFade.setup(100, 255, -255, "Quad.easeOut", 50);
-	_handFade.setup(100, 255, -255, "Quad.easeOut");
+	_titleFade.setup(100, 255, -255, Easing::QuadEaseOut, 50);
+	_handFade.setup(100, 255, -255, Easing::QuadEaseOut);
 }
 
 void Scene2::update()

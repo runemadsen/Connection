@@ -10,8 +10,8 @@ Scene1::Scene1()
 	_nameCounter.duration = 200;
 	
 	
-	_titleFade.setup(100, 255, -255, "Quad.easeOut");
-	_nameFade.setup(100, 255, -255, "Quad.easeOut", 50);
+	_titleFade.setup(100, 255, -255, Easing::QuadEaseOut);
+	_nameFade.setup(100, 255, -255, Easing::QuadEaseOut, 50);
 	
 	
 	_userName = "";
@@ -37,7 +37,9 @@ void Scene1::update()
 		
 		if(_nameFade.finished())
 		{
-			_finished = true;	
+			_finished = true;
+			
+			App::getInstance()->loadUserData(_userName);
 		}
 	}
 }
