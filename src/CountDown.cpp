@@ -4,7 +4,7 @@ CountDown::CountDown()
 {
 	_finished = false;
 	
-	_font.loadFont("GothamRounded-Book.ttf", 52, true, true);
+	_font.loadFont("GothamRounded-Book.ttf", 150, true, true);
 	
 	int duration = 50;
 	
@@ -30,13 +30,13 @@ void CountDown::update()
 void CountDown::draw()
 {
 	ofSetColor(255, 255, 255, _letter3.num - _letter2.num);
-	_font.drawString("3", ofGetWidth() / 2, ofGetHeight() / 2);
+	_font.drawString("3", (ofGetWidth() / 2) - (_font.stringWidth("3") / 2), (ofGetHeight() / 2)  + (_font.stringHeight("3") / 2));
 	
 	ofSetColor(255, 255, 255, _letter2.num - _letter1.num);
-	_font.drawString("2", ofGetWidth() / 2, ofGetHeight() / 2);
+	_font.drawString("2", (ofGetWidth() / 2) - (_font.stringWidth("2") / 2), (ofGetHeight() / 2)  + (_font.stringHeight("2") / 2));
 	
 	ofSetColor(255, 255, 255, _letter1.num - _letter1Down.num);
-	_font.drawString("1", ofGetWidth() / 2, ofGetHeight() / 2);
+	_font.drawString("1", (ofGetWidth() / 2) - (_font.stringWidth("1") / 2), (ofGetHeight() / 2)  + (_font.stringHeight("1") / 2));
 }
 
 void CountDown::play()

@@ -15,7 +15,7 @@ SceneRecording::SceneRecording()
 	_line2.setup(duration, 0, ofGetHeight(), Easing::CubicEaseOut, delay);
 	_line3.setup(duration, ofGetWidth(), -(ofGetWidth()), Easing::CubicEaseOut, delay * 2);
 	_line4.setup(duration, ofGetHeight(), -(ofGetHeight()), Easing::CubicEaseOut, delay * 3);
-	_lineColor.setup(100, 255, -255, Easing::CubicEaseOut, delay * 4);
+	_lineColor.setup(50, 255, -255, Easing::SineEaseIn, 100, 2);
 	
 	_line1.play();
 	_line2.play();
@@ -71,7 +71,7 @@ void SceneRecording::display()
 	ofEnableAlphaBlending();
 	
 	ofSetColor(255, 255, 255, _captureFade.num);
-	_vidGrabber.draw(0, 0);
+	_vidGrabber.draw(0, 0, ofGetWidth(), ofGetHeight());
 	
 	ofSetColor(255, 255, 255, 255);
 	
