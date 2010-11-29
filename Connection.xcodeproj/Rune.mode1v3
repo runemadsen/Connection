@@ -277,8 +277,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>17</integer>
-									<integer>15</integer>
+									<integer>27</integer>
+									<integer>23</integer>
 									<integer>8</integer>
 									<integer>0</integer>
 								</array>
@@ -321,7 +321,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>XMLLoader.cpp</string>
+								<string>Scene1.cpp</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -329,11 +329,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>XMLLoader.cpp</string>
+										<string>Scene1.cpp</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>A5662096129C32D3001E49AE</string>
+										<string>A563E45F12A17E5700528953</string>
 										<key>history</key>
 										<array>
 											<string>A5DE059F1296047C00283585</string>
@@ -350,7 +350,6 @@
 											<string>A5D49A73129B1859005E5012</string>
 											<string>A5D49A74129B1859005E5012</string>
 											<string>A5603900129B1F9400E72E8B</string>
-											<string>A5603910129B1FC100E72E8B</string>
 											<string>A566207E129C3290001E49AE</string>
 											<string>A566207F129C3290001E49AE</string>
 											<string>A5662080129C3290001E49AE</string>
@@ -358,7 +357,8 @@
 											<string>A5662082129C3290001E49AE</string>
 											<string>A5662084129C3290001E49AE</string>
 											<string>A5662094129C32D3001E49AE</string>
-											<string>A5662095129C32D3001E49AE</string>
+											<string>A5662099129C3A18001E49AE</string>
+											<string>A566209B129C3A18001E49AE</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -416,9 +416,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>A5662087129C3290001E49AE</string>
+				<string>A563E45C12A17E5600528953</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>A5662088129C3290001E49AE</string>
+				<string>A563E45D12A17E5600528953</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -556,12 +556,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>A5662097129C32D3001E49AE</string>
-		<string>A566208A129C3290001E49AE</string>
-		<string>A566208B129C3290001E49AE</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>A56221941295FBE9003B9B20</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/Rune/Projects/Open Frameworks/Open Frameworks 0061 FAT/apps/Project Dev/Connection/Connection.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -586,7 +581,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>XMLLoader.cpp</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -603,8 +598,6 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -644,7 +637,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>A56221941295FBE9003B9B20</string>
-				<string>A566206E129C321E001E49AE</string>
+				<string>A563E45E12A17E5600528953</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -938,7 +931,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A540C3CD12972ABA003F60CC /* Scene2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A540C3CC12972ABA003F60CC /* Scene2.cpp */; };
 		A540C4D31297398C003F60CC /* Tween.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A540C4D11297398C003F60CC /* Tween.cpp */; };
+		A55A5E1212A411AD00A2B877 /* ScenePlayback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A55A5E1112A411AD00A2B877 /* ScenePlayback.cpp */; };
 		A562219A1295FD1D003B9B20 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A56221991295FD1D003B9B20 /* Scene.cpp */; };
 		A56221B51295FFAE003B9B20 /* Scene1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A56221B41295FFAE003B9B20 /* Scene1.cpp */; };
 		A5D49997129B0EE0005E5012 /* XMLLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5D49996129B0EE0005E5012 /* XMLLoader.cpp */; };
@@ -95,6 +96,8 @@
 		A540C3CC12972ABA003F60CC /* Scene2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene2.cpp; sourceTree = "<group>"; };
 		A540C4D11297398C003F60CC /* Tween.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tween.cpp; path = ../../Tools/Tween/Tween.cpp; sourceTree = SOURCE_ROOT; };
 		A540C4D21297398C003F60CC /* Tween.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tween.h; path = ../../Tools/Tween/Tween.h; sourceTree = SOURCE_ROOT; };
+		A55A5E1012A411AD00A2B877 /* ScenePlayback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScenePlayback.h; sourceTree = "<group>"; };
+		A55A5E1112A411AD00A2B877 /* ScenePlayback.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScenePlayback.cpp; sourceTree = "<group>"; };
 		A56221981295FD1D003B9B20 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
 		A56221991295FD1D003B9B20 /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
 		A56221B31295FFAE003B9B20 /* Scene1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene1.h; sourceTree = "<group>"; };
@@ -222,6 +225,8 @@
 				A56221B41295FFAE003B9B20 /* Scene1.cpp */,
 				A540C3CB12972ABA003F60CC /* Scene2.h */,
 				A540C3CC12972ABA003F60CC /* Scene2.cpp */,
+				A55A5E1012A411AD00A2B877 /* ScenePlayback.h */,
+				A55A5E1112A411AD00A2B877 /* ScenePlayback.cpp */,
 			);
 			name = scenes;
 			sourceTree = "<group>";
@@ -675,6 +680,7 @@
 				A5D49A0B129B15D0005E5012 /* tinyxmlerror.cpp in Sources */,
 				A5D49A0C129B15D0005E5012 /* tinyxmlparser.cpp in Sources */,
 				A5D49A0D129B15D0005E5012 /* ofxXmlSettings.cpp in Sources */,
+				A55A5E1212A411AD00A2B877 /* ScenePlayback.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

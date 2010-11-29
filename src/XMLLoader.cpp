@@ -36,8 +36,6 @@ void XMLLoader::parseModel(string fileName, User * user)
 			}
 		}
 	}
-	
-	cout << "Finished: User length: " << user->videos.size();
 }
 /*
 void XMLLoader::save()

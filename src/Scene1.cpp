@@ -26,6 +26,9 @@ void Scene1::update()
 	{
 		_fadeMode = true;
 		
+		// load user data
+		App::getInstance()->loadUserData(_userName);
+		
 		_titleFade.play();
 		_nameFade.play();
 	}
@@ -38,8 +41,6 @@ void Scene1::update()
 		if(_nameFade.finished())
 		{
 			_finished = true;
-			
-			App::getInstance()->loadUserData(_userName);
 		}
 	}
 }

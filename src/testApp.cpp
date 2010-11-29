@@ -12,7 +12,8 @@ void testApp::setup()
 	curScene = 0;
 	
 	scenes.push_back( new Scene1() );
-	scenes.push_back( new Scene2() );
+	//scenes.push_back( new Scene2() );
+	scenes.push_back( new ScenePlayback() );
 }
 
 /* Update
@@ -27,6 +28,8 @@ void testApp::update()
 		if (curScene + 1 < scenes.size()) 
 		{
 			curScene++;
+			
+			scenes[curScene]->init();
 		}
 	}
 }

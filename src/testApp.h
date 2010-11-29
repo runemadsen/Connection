@@ -6,9 +6,10 @@
 #include "Scene.h"
 #include "Scene1.h"
 #include "Scene2.h"
+#include "ScenePlayback.h"
 
-class testApp : public ofBaseApp{
-	
+class testApp : public ofBaseApp
+{	
 	public:
 		
 		void setup();

@@ -12,6 +12,7 @@ public:
 	virtual void update() {}
 	virtual void display() {}
 	virtual void keyPressed(int key) {}
+	virtual void init() {}
 	
 	bool finished() { return _finished; }
 	
