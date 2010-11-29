@@ -10,6 +10,8 @@
 		A540C3CD12972ABA003F60CC /* Scene2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A540C3CC12972ABA003F60CC /* Scene2.cpp */; };
 		A540C4D31297398C003F60CC /* Tween.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A540C4D11297398C003F60CC /* Tween.cpp */; };
 		A55A5E1212A411AD00A2B877 /* ScenePlayback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A55A5E1112A411AD00A2B877 /* ScenePlayback.cpp */; };
+		A55A5E4512A42AA200A2B877 /* SceneRecording.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A55A5E4412A42AA200A2B877 /* SceneRecording.cpp */; };
+		A55A5EB512A4491D00A2B877 /* CountDown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A55A5EB412A4491D00A2B877 /* CountDown.cpp */; };
 		A562219A1295FD1D003B9B20 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A56221991295FD1D003B9B20 /* Scene.cpp */; };
 		A56221B51295FFAE003B9B20 /* Scene1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A56221B41295FFAE003B9B20 /* Scene1.cpp */; };
 		A5D49997129B0EE0005E5012 /* XMLLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5D49996129B0EE0005E5012 /* XMLLoader.cpp */; };
@@ -98,6 +100,10 @@
 		A540C4D21297398C003F60CC /* Tween.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tween.h; path = ../../Tools/Tween/Tween.h; sourceTree = SOURCE_ROOT; };
 		A55A5E1012A411AD00A2B877 /* ScenePlayback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScenePlayback.h; sourceTree = "<group>"; };
 		A55A5E1112A411AD00A2B877 /* ScenePlayback.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScenePlayback.cpp; sourceTree = "<group>"; };
+		A55A5E4312A42AA200A2B877 /* SceneRecording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneRecording.h; sourceTree = "<group>"; };
+		A55A5E4412A42AA200A2B877 /* SceneRecording.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneRecording.cpp; sourceTree = "<group>"; };
+		A55A5EB312A4491D00A2B877 /* CountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDown.h; sourceTree = "<group>"; };
+		A55A5EB412A4491D00A2B877 /* CountDown.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CountDown.cpp; sourceTree = "<group>"; };
 		A56221981295FD1D003B9B20 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
 		A56221991295FD1D003B9B20 /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
 		A56221B31295FFAE003B9B20 /* Scene1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene1.h; sourceTree = "<group>"; };
@@ -216,6 +222,15 @@
 			name = tween;
 			sourceTree = "<group>";
 		};
+		A55A5EB212A4491100A2B877 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A55A5EB312A4491D00A2B877 /* CountDown.h */,
+				A55A5EB412A4491D00A2B877 /* CountDown.cpp */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
 		A56221B21295FFA4003B9B20 /* scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +242,8 @@
 				A540C3CC12972ABA003F60CC /* Scene2.cpp */,
 				A55A5E1012A411AD00A2B877 /* ScenePlayback.h */,
 				A55A5E1112A411AD00A2B877 /* ScenePlayback.cpp */,
+				A55A5E4312A42AA200A2B877 /* SceneRecording.h */,
+				A55A5E4412A42AA200A2B877 /* SceneRecording.cpp */,
 			);
 			name = scenes;
 			sourceTree = "<group>";
@@ -491,6 +508,7 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				A55A5EB212A4491100A2B877 /* views */,
 				A5D499D6129B14C2005E5012 /* models */,
 				A5D499B8129B13DE005E5012 /* singleton */,
 				A5D49994129B0ED2005E5012 /* tools */,
@@ -681,6 +699,8 @@
 				A5D49A0C129B15D0005E5012 /* tinyxmlparser.cpp in Sources */,
 				A5D49A0D129B15D0005E5012 /* ofxXmlSettings.cpp in Sources */,
 				A55A5E1212A411AD00A2B877 /* ScenePlayback.cpp in Sources */,
+				A55A5E4512A42AA200A2B877 /* SceneRecording.cpp in Sources */,
+				A55A5EB512A4491D00A2B877 /* CountDown.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

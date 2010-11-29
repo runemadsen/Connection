@@ -13,7 +13,8 @@ void testApp::setup()
 	
 	scenes.push_back( new Scene1() );
 	//scenes.push_back( new Scene2() );
-	scenes.push_back( new ScenePlayback() );
+	//scenes.push_back( new ScenePlayback() );
+	scenes.push_back( new SceneRecording() );
 }
 
 /* Update

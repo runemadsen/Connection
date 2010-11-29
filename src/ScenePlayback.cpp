@@ -44,14 +44,10 @@ void ScenePlayback::update()
 			_curVideo++;
 			
 			init();
-			
-			cout << "Changed video \n";
 		}
 		else 
 		{
 			_finished = true;
-			
-			cout << "Finished \n";
 		}
 	}
 }

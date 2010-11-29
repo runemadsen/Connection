@@ -7,6 +7,7 @@
 #include "Scene1.h"
 #include "Scene2.h"
 #include "ScenePlayback.h"
+#include "SceneRecording.h"
 
 class testApp : public ofBaseApp
 {	
