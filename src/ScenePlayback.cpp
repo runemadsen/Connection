@@ -4,6 +4,8 @@ ScenePlayback::ScenePlayback()
 {
 	ofBackground(0, 0, 0);
 	
+	_name = SCENE_PLAYBACK;
+	
 	_curVideo = 0;
 	
 	_videoFadeUp.setup(100, 0, 255, Easing::QuadEaseOut);

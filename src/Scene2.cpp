@@ -4,6 +4,8 @@ Scene2::Scene2()
 {
 	ofBackground(0, 0, 0);
 	
+	_name = SCENE_2;
+	
 	_test.loadImage("step3.jpg");
 	_hand.loadImage("hand.png");
 	_hand.resize(_hand.width * 0.7, _hand.height * 0.7);

@@ -10,6 +10,8 @@ void XMLLoader::loadUserData(string username, User * user)
 	
 	int numFiles = DIR.listDir(FOLDER);
 	
+	bool found = false;
+	
 	for(int i = 0; i < numFiles; i++)
 	{
 		cout << DIR.getName(i) << endl;
@@ -17,7 +19,17 @@ void XMLLoader::loadUserData(string username, User * user)
 		if(username + ".xml" == DIR.getName(i))
 		{
 			parseModel(DIR.getName(i), user);
+			
+			found = true;
 		}
+	}
+	
+	if(!found)
+	{
+		cout << "No XML File found \n";
+		
+		_xml.setValue(VIDEOS, "");
+		_xml.saveFile(FOLDER + username + ".xml");
 	}
 }
 

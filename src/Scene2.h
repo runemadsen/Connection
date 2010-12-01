@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "Scene.h"
 #include "Tools.h"
+#include "Constants.h"
 
 class Scene2 : public Scene {
 	

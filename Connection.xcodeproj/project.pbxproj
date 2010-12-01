@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A515401412A6AAE8009D5A24 /* SceneBeforeRecording.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A515401312A6AAE8009D5A24 /* SceneBeforeRecording.cpp */; };
 		A540C3CD12972ABA003F60CC /* Scene2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A540C3CC12972ABA003F60CC /* Scene2.cpp */; };
 		A540C4D31297398C003F60CC /* Tween.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A540C4D11297398C003F60CC /* Tween.cpp */; };
 		A55A5E1212A411AD00A2B877 /* ScenePlayback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A55A5E1112A411AD00A2B877 /* ScenePlayback.cpp */; };
@@ -93,6 +94,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A515401212A6AAE8009D5A24 /* SceneBeforeRecording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneBeforeRecording.h; sourceTree = "<group>"; };
+		A515401312A6AAE8009D5A24 /* SceneBeforeRecording.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneBeforeRecording.cpp; sourceTree = "<group>"; };
 		A540C28612970E76003F60CC /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		A540C3CB12972ABA003F60CC /* Scene2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene2.h; sourceTree = "<group>"; };
 		A540C3CC12972ABA003F60CC /* Scene2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene2.cpp; sourceTree = "<group>"; };
@@ -244,6 +247,8 @@
 				A55A5E1112A411AD00A2B877 /* ScenePlayback.cpp */,
 				A55A5E4312A42AA200A2B877 /* SceneRecording.h */,
 				A55A5E4412A42AA200A2B877 /* SceneRecording.cpp */,
+				A515401212A6AAE8009D5A24 /* SceneBeforeRecording.h */,
+				A515401312A6AAE8009D5A24 /* SceneBeforeRecording.cpp */,
 			);
 			name = scenes;
 			sourceTree = "<group>";
@@ -701,6 +706,7 @@
 				A55A5E1212A411AD00A2B877 /* ScenePlayback.cpp in Sources */,
 				A55A5E4512A42AA200A2B877 /* SceneRecording.cpp in Sources */,
 				A55A5EB512A4491D00A2B877 /* CountDown.cpp in Sources */,
+				A515401412A6AAE8009D5A24 /* SceneBeforeRecording.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

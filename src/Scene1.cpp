@@ -4,6 +4,8 @@ Scene1::Scene1()
 {
 	ofBackground(0, 0, 0);
 	
+	_name = SCENE_1;
+	
 	_img.loadImage("typeyourname.png");
 	_font.loadFont("GothamRounded-Book.ttf", 26, true, true);
 	

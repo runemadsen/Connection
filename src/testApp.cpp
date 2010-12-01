@@ -12,8 +12,9 @@ void testApp::setup()
 	curScene = 0;
 	
 	scenes.push_back( new Scene1() );
-	//scenes.push_back( new Scene2() );
-	//scenes.push_back( new ScenePlayback() );
+	scenes.push_back( new Scene2() );
+	scenes.push_back( new ScenePlayback() );
+	scenes.push_back( new SceneBeforeRecording() );
 	scenes.push_back( new SceneRecording() );
 }
 
@@ -29,6 +30,14 @@ void testApp::update()
 		if (curScene + 1 < scenes.size()) 
 		{
 			curScene++;
+			
+			if(curScene == SCENE_PLAYBACK && App::getInstance()->user.videos.size() == 0)
+			{
+				curScene++;
+				
+				SceneBeforeRecording * scene = (SceneBeforeRecording *) scenes[curScene];
+				scene->showNoVideosSign();
+			}
 			
 			scenes[curScene]->init();
 		}

@@ -4,6 +4,8 @@ SceneRecording::SceneRecording()
 {
 	ofBackground(0, 0, 0);
 	
+	_name = SCENE_RECORDING;
+	
 	_captureFade.setup(100, 0, 255, Easing::QuadEaseOut);
 	
 	_rectSize = 30;

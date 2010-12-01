@@ -16,12 +16,16 @@ public:
 	
 	bool finished() { return _finished; }
 	
+	int getName() { return _name; }
+	
 protected:
 	
 	bool _finished;
 	ofImage _test;
 	
 	bool _fadeMode;
+	
+	int _name;
 	
 private:
 	
