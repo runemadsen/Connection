@@ -10,6 +10,7 @@
 		A515401412A6AAE8009D5A24 /* SceneBeforeRecording.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A515401312A6AAE8009D5A24 /* SceneBeforeRecording.cpp */; };
 		A540C3CD12972ABA003F60CC /* Scene2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A540C3CC12972ABA003F60CC /* Scene2.cpp */; };
 		A540C4D31297398C003F60CC /* Tween.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A540C4D11297398C003F60CC /* Tween.cpp */; };
+		A550610E12A7FFE000916354 /* ofxQtAudioSaver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A550610C12A7FFE000916354 /* ofxQtAudioSaver.cpp */; };
 		A55A5E1212A411AD00A2B877 /* ScenePlayback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A55A5E1112A411AD00A2B877 /* ScenePlayback.cpp */; };
 		A55A5E4512A42AA200A2B877 /* SceneRecording.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A55A5E4412A42AA200A2B877 /* SceneRecording.cpp */; };
 		A55A5EB512A4491D00A2B877 /* CountDown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A55A5EB412A4491D00A2B877 /* CountDown.cpp */; };
@@ -101,6 +102,8 @@
 		A540C3CC12972ABA003F60CC /* Scene2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene2.cpp; sourceTree = "<group>"; };
 		A540C4D11297398C003F60CC /* Tween.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tween.cpp; path = ../../Tools/Tween/Tween.cpp; sourceTree = SOURCE_ROOT; };
 		A540C4D21297398C003F60CC /* Tween.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tween.h; path = ../../Tools/Tween/Tween.h; sourceTree = SOURCE_ROOT; };
+		A550610C12A7FFE000916354 /* ofxQtAudioSaver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxQtAudioSaver.cpp; sourceTree = "<group>"; };
+		A550610D12A7FFE000916354 /* ofxQtAudioSaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxQtAudioSaver.h; sourceTree = "<group>"; };
 		A55A5E1012A411AD00A2B877 /* ScenePlayback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScenePlayback.h; sourceTree = "<group>"; };
 		A55A5E1112A411AD00A2B877 /* ScenePlayback.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScenePlayback.cpp; sourceTree = "<group>"; };
 		A55A5E4312A42AA200A2B877 /* SceneRecording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneRecording.h; sourceTree = "<group>"; };
@@ -208,6 +211,7 @@
 		A540C20412970B7D003F60CC /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				A550610B12A7FFE000916354 /* ofxQTAudioSaver */,
 				A5D49A00129B15D0005E5012 /* ofxXmlSettings */,
 				A5D4999C129B0FDB005E5012 /* ofxDirList */,
 			);
@@ -224,6 +228,16 @@
 			);
 			name = tween;
 			sourceTree = "<group>";
+		};
+		A550610B12A7FFE000916354 /* ofxQTAudioSaver */ = {
+			isa = PBXGroup;
+			children = (
+				A550610C12A7FFE000916354 /* ofxQtAudioSaver.cpp */,
+				A550610D12A7FFE000916354 /* ofxQtAudioSaver.h */,
+			);
+			name = ofxQTAudioSaver;
+			path = ../../../addons/ofxQTAudioSaver;
+			sourceTree = SOURCE_ROOT;
 		};
 		A55A5EB212A4491100A2B877 /* views */ = {
 			isa = PBXGroup;
@@ -707,6 +721,7 @@
 				A55A5E4512A42AA200A2B877 /* SceneRecording.cpp in Sources */,
 				A55A5EB512A4491D00A2B877 /* CountDown.cpp in Sources */,
 				A515401412A6AAE8009D5A24 /* SceneBeforeRecording.cpp in Sources */,
+				A550610E12A7FFE000916354 /* ofxQtAudioSaver.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

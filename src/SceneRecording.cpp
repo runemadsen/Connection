@@ -1,4 +1,5 @@
 #include "SceneRecording.h"
+#include "stdio.h"
 
 SceneRecording::SceneRecording()
 {
@@ -91,5 +92,5 @@ void SceneRecording::display()
 
 void SceneRecording::keyPressed(int key)
 {
-	
+
 }

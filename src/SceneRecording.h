@@ -5,6 +5,12 @@
 #include "Tools.h"
 #include "App.h"
 #include "CountDown.h"
+#include "ofxQtAudioSaver.h"
+
+#define SAMPLE_RATE				44100
+#define BUFFER_SIZE				256
+#define RECORDING_DURATION		3
+#define NUM_CHANNELS			1
 
 class SceneRecording : public Scene 
 {

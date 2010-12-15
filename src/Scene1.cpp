@@ -11,7 +11,6 @@ Scene1::Scene1()
 	
 	_nameCounter.duration = 200;
 	
-	
 	_titleFade.setup(100, 255, -255, Easing::QuadEaseOut);
 	_nameFade.setup(100, 255, -255, Easing::QuadEaseOut, 50);
 	
@@ -55,9 +54,12 @@ void Scene1::display()
 	//float a = Quad::easeOut(_titleFade.time, 255, -255, _titleFade.duration);
 	
 	float a =  _titleFade.num;
+	float xPos = (ofGetWidth() / 2) - (_img.width / 2);
+	float yPos = (ofGetHeight() / 2) - (_img.height / 2);
 	
 	ofSetColor(255, 255, 255, a);
-	_img.draw(206, 324);
+	
+	_img.draw(xPos, yPos);
 	
 	// Draw Blinker
 	if(ofGetFrameNum() % 100 > 50)
@@ -68,13 +70,16 @@ void Scene1::display()
 	ofFill();
 	ofSetColor(255, 255, 255, a);
 	
-	ofRect(804, 418, 24, 36);
+	xPos += _img.width - 24;
+	yPos += _img.height + 20;
+	
+	ofRect(xPos, yPos, 24, 36);
 	
 	//Draw name
 	
 	ofSetColor(255, 255, 255, _nameFade.num);
 	
-	_font.drawString(_userName, 793 - _font.stringWidth(_userName), 445);
+	_font.drawString(_userName, xPos - 15 - _font.stringWidth(_userName), yPos + 25);
 	
 	ofDisableAlphaBlending();
 }

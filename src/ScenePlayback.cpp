@@ -70,7 +70,7 @@ void ScenePlayback::display()
 	}
 	
 	ofSetColor(255, 255, 255, a);
-	_video.draw(0, 0);
+	_video.draw((ofGetWidth() / 2) - (_video.width / 2), ofGetHeight() - _video.height);
 	ofDisableAlphaBlending();
 }
 
