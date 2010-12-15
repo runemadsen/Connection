@@ -10,9 +10,11 @@ class Scene1 : public Scene {
 	public:
 		
 	Scene1();
+	void init();
 	void update();
 	void display();
 	void keyPressed(int key);
+	void reset();
 
 	private:
 	

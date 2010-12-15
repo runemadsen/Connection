@@ -13,6 +13,7 @@ public:
 	virtual void display() {}
 	virtual void keyPressed(int key) {}
 	virtual void init() {}
+	virtual void reset() {}
 	
 	bool finished() { return _finished; }
 	

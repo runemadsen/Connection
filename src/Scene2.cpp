@@ -12,8 +12,12 @@ Scene2::Scene2()
 	_title.loadImage("placeyourhand.png");
 	
 	_font.loadFont("GothamRounded-Book.ttf", 26, true, true);
-	
+}
+
+void Scene2::init()
+{
 	_countDown.duration = 500;
+	_countDown.state = 1;
 	
 	_titleFade.setup(100, 255, -255, Easing::QuadEaseOut, 50);
 	_handFade.setup(100, 255, -255, Easing::QuadEaseOut);
@@ -55,6 +59,17 @@ void Scene2::display()
 
 	_title.draw((ofGetWidth() / 2) - (_title.width / 2), loc.y + _hand.height + 30);
 	ofDisableAlphaBlending();
+}
+/* Reset
+ _______________________________________________________________ */
+
+void Scene2::reset()
+{
+	_finished = false;
+	_titleFade.stop();
+	_handFade.stop();
+	_fadeMode = false;
+	_countDown.time = 0;
 }
 
 void Scene2::keyPressed(int key)

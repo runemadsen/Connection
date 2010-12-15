@@ -10,8 +10,8 @@ SceneBeforeRecording::SceneBeforeRecording()
 	
 	_fadeDown.setup(100, 255, -255, Easing::QuadEaseOut, 300);
 	
-	_msg1 = "Finished playing back videos. Now record";
-	_msg2 = "No videos found. Now record";
+	_msg1 = "No more messages recorded";
+	_msg2 = "No messages recorded";
 }
 
 void SceneBeforeRecording::init()
@@ -50,6 +50,16 @@ void SceneBeforeRecording::display()
 	_font.drawString(message, (ofGetWidth() / 2) - (_font.stringWidth(message) / 2), ofGetHeight() / 2);
 	
 	ofDisableAlphaBlending();
+}
+
+/* Reset
+ _______________________________________________________________ */
+
+void SceneBeforeRecording::reset()
+{
+	_finished = false;
+	_fadeDown.stop();
+	_signToShow = 0;
 }
 
 void SceneBeforeRecording::keyPressed(int key)

@@ -8,6 +8,8 @@ ScenePlayback::ScenePlayback()
 	
 	_curVideo = 0;
 	
+	_mask.loadImage("mask.png");
+	
 	_videoFadeUp.setup(100, 0, 255, Easing::QuadEaseOut);
 	_videoFadeDown.setup(100, 255, -255, Easing::QuadEaseOut);
 }
@@ -69,9 +71,36 @@ void ScenePlayback::display()
 		a = _videoFadeDown.num;
 	}
 	
-	ofSetColor(255, 255, 255, a);
-	_video.draw((ofGetWidth() / 2) - (_video.width / 2), ofGetHeight() - _video.height);
+	float scale = 1;
+	
+	if(scale == 1)
+	{
+		ofSetColor(255, 255, 255, a);
+		_video.draw((ofGetWidth() / 2) - (_video.width / 2), ofGetHeight() - _video.height);
+		ofSetColor(255, 255, 255, 255);
+		_mask.draw((ofGetWidth() / 2) - (_video.width / 2), ofGetHeight() - _video.height);
+	}
+	else 
+	{
+		ofSetColor(255, 255, 255, a);
+		_video.draw((ofGetWidth() / 2) - ((_video.width * scale) / 2), ofGetHeight() - (_video.height * scale), _video.width * scale, _video.height * scale);
+		ofSetColor(255, 255, 255, 255);
+		_mask.draw((ofGetWidth() / 2) - ((_video.width * scale) / 2), ofGetHeight() - (_video.height * scale), _video.width * scale, _video.height * scale);
+	}
+	
 	ofDisableAlphaBlending();
+}
+
+/* Reset
+ _______________________________________________________________ */
+
+void ScenePlayback::reset()
+{
+	_finished = false;
+	_video.close();
+	_videoFadeDown.stop();
+	_videoFadeUp.stop();
+	_curVideo = 0;
 }
 
 void ScenePlayback::keyPressed(int key)

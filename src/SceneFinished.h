@@ -4,13 +4,14 @@
 #include "Scene.h"
 #include "Tools.h"
 #include "App.h"
+#include "CountDown.h"
 
-class ScenePlayback : public Scene 
+class SceneFinished : public Scene 
 {
 	
 public:
 	
-	ScenePlayback();
+	SceneFinished();
 	
 	void init();
 	void update();
@@ -21,12 +22,7 @@ public:
 	
 private:
 	
-	ofVideoPlayer _video;
+	Tween _fadeDown;
 	
-	int _curVideo;
-	
-	Tween _videoFadeUp;
-	Tween _videoFadeDown;
-	
-	ofImage _mask;
+	ofTrueTypeFont _font;
 };

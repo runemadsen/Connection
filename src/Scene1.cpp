@@ -8,12 +8,16 @@ Scene1::Scene1()
 	
 	_img.loadImage("typeyourname.png");
 	_font.loadFont("GothamRounded-Book.ttf", 26, true, true);
+}
+
+void Scene1::init()
+{
+	cout << "init first scene \n";
 	
 	_nameCounter.duration = 200;
 	
 	_titleFade.setup(100, 255, -255, Easing::QuadEaseOut);
 	_nameFade.setup(100, 255, -255, Easing::QuadEaseOut, 50);
-	
 	
 	_userName = "";
 }
@@ -21,7 +25,6 @@ Scene1::Scene1()
 void Scene1::update()
 {
 	_nameCounter.tick();
-	
 	
 	if(_userName.size() > 0 && _nameCounter.time == _nameCounter.duration && !_fadeMode)
 	{
@@ -50,10 +53,9 @@ void Scene1::display()
 {
 	ofEnableAlphaBlending();
 	
-	// Draw title
-	//float a = Quad::easeOut(_titleFade.time, 255, -255, _titleFade.duration);
-	
 	float a =  _titleFade.num;
+	
+	cout << "Alpha : " << a << endl;
 	float xPos = (ofGetWidth() / 2) - (_img.width / 2);
 	float yPos = (ofGetHeight() / 2) - (_img.height / 2);
 	
@@ -82,6 +84,20 @@ void Scene1::display()
 	_font.drawString(_userName, xPos - 15 - _font.stringWidth(_userName), yPos + 25);
 	
 	ofDisableAlphaBlending();
+}
+
+/* Reset
+ _______________________________________________________________ */
+
+void Scene1::reset()
+{
+	_finished = false;
+	_userName = "";
+	_titleFade.stop();
+	_nameFade.stop();
+	_nameCounter.time = 0;
+	_nameCounter.state = 0;
+	_fadeMode = false;
 }
 
 void Scene1::keyPressed(int key)

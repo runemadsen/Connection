@@ -1,7 +1,6 @@
 #ifndef _TEST_APP
 #define _TEST_APP
 
-
 #include "ofMain.h"
 #include "Scene.h"
 #include "Scene1.h"
@@ -9,6 +8,7 @@
 #include "ScenePlayback.h"
 #include "SceneRecording.h"
 #include "SceneBeforeRecording.h"
+#include "SceneFinished.h"
 
 class testApp : public ofBaseApp
 {	
@@ -17,6 +17,7 @@ class testApp : public ofBaseApp
 		void setup();
 		void update();
 		void draw();
+		void resetAll();
 		
 		void keyPressed(int key);
 		void keyReleased(int key);

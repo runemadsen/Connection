@@ -16,6 +16,7 @@
 		A55A5EB512A4491D00A2B877 /* CountDown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A55A5EB412A4491D00A2B877 /* CountDown.cpp */; };
 		A562219A1295FD1D003B9B20 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A56221991295FD1D003B9B20 /* Scene.cpp */; };
 		A56221B51295FFAE003B9B20 /* Scene1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A56221B41295FFAE003B9B20 /* Scene1.cpp */; };
+		A5AB1BA812B8A31300EA51CF /* SceneFinished.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5AB1BA712B8A31300EA51CF /* SceneFinished.cpp */; };
 		A5D49997129B0EE0005E5012 /* XMLLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5D49996129B0EE0005E5012 /* XMLLoader.cpp */; };
 		A5D4999F129B0FDB005E5012 /* ofxDirList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5D4999D129B0FDB005E5012 /* ofxDirList.cpp */; };
 		A5D499BB129B13E9005E5012 /* App.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5D499BA129B13E9005E5012 /* App.cpp */; };
@@ -115,6 +116,8 @@
 		A56221B31295FFAE003B9B20 /* Scene1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene1.h; sourceTree = "<group>"; };
 		A56221B41295FFAE003B9B20 /* Scene1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene1.cpp; sourceTree = "<group>"; };
 		A5662066129C2E85001E49AE /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		A5AB1BA612B8A31300EA51CF /* SceneFinished.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneFinished.h; sourceTree = "<group>"; };
+		A5AB1BA712B8A31300EA51CF /* SceneFinished.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneFinished.cpp; sourceTree = "<group>"; };
 		A5D49995129B0EE0005E5012 /* XMLLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLLoader.h; sourceTree = "<group>"; };
 		A5D49996129B0EE0005E5012 /* XMLLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XMLLoader.cpp; sourceTree = "<group>"; };
 		A5D4999D129B0FDB005E5012 /* ofxDirList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxDirList.cpp; sourceTree = "<group>"; };
@@ -263,6 +266,8 @@
 				A55A5E4412A42AA200A2B877 /* SceneRecording.cpp */,
 				A515401212A6AAE8009D5A24 /* SceneBeforeRecording.h */,
 				A515401312A6AAE8009D5A24 /* SceneBeforeRecording.cpp */,
+				A5AB1BA612B8A31300EA51CF /* SceneFinished.h */,
+				A5AB1BA712B8A31300EA51CF /* SceneFinished.cpp */,
 			);
 			name = scenes;
 			sourceTree = "<group>";
@@ -722,6 +727,7 @@
 				A55A5EB512A4491D00A2B877 /* CountDown.cpp in Sources */,
 				A515401412A6AAE8009D5A24 /* SceneBeforeRecording.cpp in Sources */,
 				A550610E12A7FFE000916354 /* ofxQtAudioSaver.cpp in Sources */,
+				A5AB1BA812B8A31300EA51CF /* SceneFinished.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

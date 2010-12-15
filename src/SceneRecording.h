@@ -22,6 +22,7 @@ public:
 	void init();
 	void update();
 	void display();
+	void reset();
 	
 	void keyPressed(int key);
 	
@@ -34,6 +35,8 @@ private:
 	Tween _line3;
 	Tween _line4;
 	Tween _lineColor;
+	
+	Tween _fadeDown;
 	
 	CountDown _count;
 	

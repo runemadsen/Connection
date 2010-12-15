@@ -16,6 +16,7 @@ public:
 	void init();
 	void update();
 	void display();
+	void reset();
 	
 	void keyPressed(int key);
 	
